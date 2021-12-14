@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="views/imagensProjeto/nuevo-internacional-1024x1024.PNG">
+    <title>Porto Seguro</title>
+    <link rel="icon" type="image/x-icon" href="views/imagensProjeto/logo.PNG">;
+    <style>
+        .geral {
+            display: block;
+            max-height: 2000px;
+            max-width: 5000px;
+            width: auto;
+            height: auto;
+        }
+
+        header {
+            height: 170px;
+            padding: 8px 20px 8px 10px;
+            background: white;
+            font-family: serif;
+            font-style: italic;
+            color: navy;
+            text-align: center;
+            text-emphasis-position: inherit;
+        }
+
+        h1 {
+            margin-top: 32px;
+            margin-right: 360px;
+            float: center;
+            size: 300px;
+        }
+
+        .log {
+            height: 150px;
+            width: 300px;
+            float: left;
+        }
+
+        body {
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 2000px;
+            background-color: rgb(163 216 221);
+        }
+
+        .login {
+            float: right;
+            width: 300px;
+        }
+
+        .menu {
+            color: navy;
+            font-weight: 500;
+            font-size: x-large;
+            padding: 15px 100px 30px 300px;
+        }
+
+        .carousel {
+            background-color: darkseagreen;
+            border: solid;
+            border-color: white;
+            margin-left: auto;
+            margin-right: auto;
+            max-height: 600px;
+            max-width: 1300px;
+            width: auto;
+            height: auto;
+        }
+
+        span {
+            color: white;
+            font-size: large;
+            font-weight: 600;
+        }
+
+        .imagem {
+
+            border-style: inset;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            max-height: 500px;
+            max-width: 550px;
+            width: auto;
+            height: auto;
+        }
+
+        .titulo {
+            text-align: center;
+        }
+
+        .colunAtual {
+            border-color: rgb(17, 148, 153);
+            border-style: solid;
+        }
+
+        .colun1 {
+            text-align: justify;
+            padding: 20px 10px 20px 10px;
+            background: white;
+        }
+
+        #imaculada {
+            width: 50%;
+            padding: inherit;
+            margin-left: 200px;
+        }
+
+        .colun2 {
+            text-align: justify;
+            padding: 20px 10px 20px 10px;
+            color: white;
+            background: gray;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        .missa {
+            margin-top: 70px;
+        }
+
+        .obs {
+            margin-top: 140px;
+        }
+
+        .colunPrestacao {
+            text-align: center;
+            border-style: solid;
+            max-height: 400px;
+            height: auto;
+            border-color: mediumseagreen;
+            color: black;
+            font-weight: 600;
+        }
+
+        .colun3 {
+            width: 30%;
+            text-align: justify;
+            padding: 10px 10px 5px 10px;
+            background: no-repeat;
+            background-image: url("/imagens/doacao.JPG");
+            background-size: 100%;
+            border-right-color: mediumseagreen;
+            border-right-style: solid;
+        }
+
+        .colun4 {
+            width: 20%;
+            text-align: justify;
+            padding: 10px 10px 5px 10px;
+            background: no-repeat;
+            background: grey;
+            background-size: 100%;
+            color: white;
+            border-right-color: mediumseagreen;
+            border-right-style: solid;
+        }
+
+        .colun5 {
+            width: 30%;
+            text-align: justify;
+            padding: 10px 10px 5px 10px;
+            background: no-repeat;
+            background-image: url("views/imagensProjeto/SOLIDARIEDADE EM FAMÍLIA.JPG");
+            background-size: 100%;
+            border-right-color: mediumseagreen;
+            border-right-style: solid;
+        }
+
+        .colun6 {
+            width: 20%;
+            text-align: justify;
+            padding: 10px 10px 5px 10px;
+            background: no-repeat;
+            background: white;
+            background-size: 100%;
+
+        }
+
+        .qt {
+            width: 60px;
+            border: none;
+            color: black;
+        }
+
+        .colunInformacao {
+            max-width: 2000px;
+            width: auto;
+            border-style: solid;
+            border-color: dimgray;
+        }
+
+        .colun7 {
+            width: 40%;
+            border-color: grey;
+            border-right-style: solid;
+        }
+
+        .imagensCol6 {
+            width: 10%;
+            text-align: justify;
+            padding: 10px 10px 5px 10px;
+            border-color: grey;
+            border-right-style: solid;
+
+        }
+
+        .colun8 {
+            width: 30%;
+            text-align: justify;
+            padding: 10px 10px 5px 10px;
+            border-color: grey;
+            border-right-style: solid;
+            background-color: white;
+        }
+
+        .colun9 {
+            color: white;
+            width: 30%;
+            text-align: justify;
+            padding: 10px 10px 5px 10px;
+            background-color: gray;
+        }
+
+
+        footer {
+            margin-top: 50px;
+            background-color: rgb(0, 150, 5, 0.3);
+        }
+
+        .foot {
+            padding: 10px 3px 10px 0px;
+            font-size: 14px;
+        }
+
+        h5 {
+            font-size: 16px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container geral">
+        <header>
+            <img class="log" src="views/imagensProjeto/logo.PNG">
+            <h1>Louvado Seja Nosso Senhor Jesus Cristo!</h1><br><br>
+            <a href='/listadoacoes' style="color: forestgreen; font-size: medium;"> <strong>ir para a lista</strong>
+            </a><span style="color: black">ou</span>
+            <a href='/logout' style="color:forestgreen; font-size: medium;"><strong> voltar a página
+                    inicial</strong></a><br>
+        </header><br><br><br>
+
+        <form action="/listadoacoes" method="post">
+            <div class="container-xxl">
+                <div class="row justify-content-evenly largura">
+                    <div class="col-6">
+                        <fieldset class="cadastro">
+                            <h1>Cadastro das Doações:</h1>
+
+                            <label for="confrade" class="label2">Nome:</label>
+                            <input type="text" name="confrade" class="form-control" required>
+
+                            <label for="conferencia" class="label2">Conferência:</label>
+                            <input type="text" name="conferencia" class="form-control" required>
+
+                            <button type="submit" class="btn btn-success botao"
+                                value="submit">Cadastrar</button><br><br>
+
+                        </fieldset>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <hr><br>
+
+        <form action="/listadoacoes" method="get">
+            <div class="container-xxl">
+                <div class="row justify-content-evenly largura">
+                    <div class="col-6">
+                        <fieldset class="cadastro">
+                            <h3> visualizar lista de doações: </h3><br>
+
+                            <button type="submit" class="btn btn-info botao" value="submit">Visualizar</button><br><br>
+                            <br>
+                        </fieldset>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <hr><br>
+
+        <form action="/update" method="post">
+            <div class="container-xxl">
+                <div class="row justify-content-evenly largura">
+                    <div class="col-6">
+                        <fieldset>
+                            <h3> Atualizar dados da doacao</h3>
+
+                            <label> Nome do confrade: </label>
+                            <input type="text" id="confrade" name="confrade" required>
+                            <br><br>
+                            <label>Informe a conferência: </label>
+                            <input type="text" id="conferencia" name="conferencia" required>
+                            <br><br>
+                            <button type="submit" class="btn btn-success botao"
+                                value="submit">Atualizar</button><br><br>
+                            <br>
+
+                        </fieldset>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <hr><br>
+
+        <form action="/delete" method="post">
+            <div class="container-xxl">
+                <div class="row justify-content-evenly largura">
+                    <div class="col-6">
+                        <fieldset>
+                            <h3> Excluir doacao da lista</h3>
+
+                            <label> Nome do confrade: </label>
+                            <input type="text" id="confrade" name="confrade" required>
+                            <br><br>
+                            <button type="submit" class="btn btn-danger botao" value="submit">Excluir</button><br><br>
+                            <br><br>
+
+                        </fieldset>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        
+
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2">
+                        <h5>Conselho Particular Costa do Descobrimento</h5>
+                        <p class="foot">
+                            Presidente: Confrade Thiago<br>Email:<br>Tel:<br>
+                            Endereço<br>
+                            Facebook<br>Instagram:
+                        </p>
+                    </div>
+                    <div class="col-md-2">
+                        <h5>Conselho Central de Itabuna</h5>
+                        <p class="foot">
+                            Presidente: Consócia Adriana<br>Email:<br>Tel:<br>
+                            Endereço: Rua Professora Dalila Paganelli S/N, Centro, Itabuna-BA
+                            <br>Facebook<br>Instagram:
+                        </p>
+                    </div>
+                    <div class="col-md-2">
+                        <h5>Conselho Metropolitano Bahia Sergipe</h5>
+                        <p class="foot">
+                            Presidente:<br>Email:<br>Tel:<br>Endereço<br>Facebook<br>Instagram:
+                        </p>
+                    </div>
+                    <div class="col-md-2">
+                        <h5>Conselho Nacional do Brasil</h5>
+                        <p class="foot">
+                            Presidente: Confrade Márcio<br>Email:<br>
+                            Tel: (21) 2242-8060 ou (21) 2242-3834<br>
+                            Endereço:Conselho Nacional do Brasil da Sociedade de São Vicente de Paulo
+                            Rua do Riachuelo, 75 – Centro, Rio de Janeiro, RJ<br>
+                            Facebook<br>Instagram:
+                        </p>
+                    </div>
+                    <div class="col-md-2">
+                        <h5>Conselho Geral Internacional</h5>
+                        <p class="foot">
+                            Presidente: Confrade Renato Lima <br>Email:cgi.communication@ssvpglobal.org<br>
+                            Tel:+33(0) 1 53 45 87 53<br>
+                            Endereço:65 Rue de la Glacière,75013 Paris,Francia<br>
+                            Facebook<br>Instagram:
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
+    </div>
+</body>
+
+</html>
