@@ -98,9 +98,9 @@ app.post("/deletelogin", (req, res) => {
 });
 
 app.post("/updatelogin", (req, res) => {
-    doacaocollection.findOneAndUpdate({ email: req.body.email }, {
+    logincollection.findOneAndUpdate({ email: req.body.email }, {
         $set:
-            ({ cargo: req.body.cargo }, { senha: req.body.senha })
+            ( { senha: req.body.senha })
     },
         { upsert: true })
         .then(result => res.json(req.body))
